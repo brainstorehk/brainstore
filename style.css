@@ -137,4 +137,11 @@ footer {
   height: 100%;
   border-radius: 8px;
 }
+.lang-switcher a {
+  color: #ccc;
+  font-size: 0.9em;
+}
+.lang-switcher a:hover {
+  color: #ff6600;
+}
 
