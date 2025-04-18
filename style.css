@@ -1,53 +1,61 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
   color: #333;
-  background-color: #fff;
 }
 .container {
   width: 90%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
 }
 header.hero {
-  background-color: #ff7a00;
+  background-color: #1a1a1a;
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
+}
+.subtitle {
+  font-size: 1.25em;
+  margin-top: 10px;
 }
 .cta-button {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #d95c00;
+  margin-top: 30px;
+  padding: 12px 28px;
+  background-color: #ffa500;
   color: white;
   text-decoration: none;
+  font-weight: bold;
   border-radius: 5px;
 }
-.features, .contact {
-  padding: 60px 0;
+.features, .highlight, .contact {
+  padding: 80px 20px;
 }
-.features h2, .contact h2 {
-  color: #d95c00;
+.features h2, .highlight h2, .contact h2 {
   text-align: center;
+  color: #ffa500;
 }
 .feature-item {
-  margin-bottom: 30px;
-}
-footer {
-  background-color: #f5f5f5;
-  text-align: center;
-  padding: 20px;
   margin-top: 40px;
 }
+.highlight {
+  background-color: #f7f7f7;
+}
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
 a {
-  color: #d95c00;
-  word-break: break-word;
+  color: #ffa500;
+  text-decoration: none;
 }
 @media screen and (max-width: 600px) {
   header.hero {
-    padding: 60px 10px;
+    padding: 60px 15px;
   }
   .cta-button {
     padding: 10px 20px;
