@@ -23,7 +23,7 @@
   <header class="hero">
     <div class="hero-content container">
       <h1>Advertising</h1>
-      <p>From storytelling ads to viral social campaigns, we deliver marketing experiences that leave impact.</p>
+      <p>From cinematic commercials to viral social content — we craft campaigns that spark connection.</p>
     </div>
   </header>
 
@@ -36,19 +36,19 @@
       </div>
       <div class="team-member">
         <img src="https://images.unsplash.com/photo-advert2" alt="Campaign 2">
-        <p>Seasonal Storytelling Ad – Retail</p>
+        <p>Seasonal Ad – Fashion Retail</p>
       </div>
       <div class="team-member">
         <img src="https://images.unsplash.com/photo-advert3" alt="Campaign 3">
-        <p>Social Media Series – Lifestyle</p>
+        <p>Social Ad Series – Lifestyle Brand</p>
       </div>
     </div>
   </section>
 
   <section class="container">
-    <h2>Advertising Approach</h2>
-    <p>We combine cinematic storytelling, data-driven targeting, and platform-native execution to craft campaigns that resonate across audiences.</p>
-    <p>From 15s hooks to long-form branded content, we adapt to format, medium, and goal — creatively.</p>
+    <h2>Our Approach</h2>
+    <p>We bridge creative storytelling and smart distribution. Whether it's a 6-second hook or a cinematic minute-long spot, our ads are made to perform — and connect.</p>
+    <p>Our team combines production, strategy, and talent sourcing to execute ads that work across platforms and audiences.</p>
   </section>
 
   <footer>
