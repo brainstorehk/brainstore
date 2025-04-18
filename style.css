@@ -90,3 +90,37 @@ footer {
     gap: 10px;
   }
 }
+.founder-section {
+  margin-top: 80px;
+}
+.founder-profile {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.founder-profile img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+.team-gallery {
+  margin-top: 80px;
+}
+.team-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.team-member {
+  text-align: center;
+  max-width: 150px;
+}
+.team-member img {
+  width: 100%;
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
+}
+
