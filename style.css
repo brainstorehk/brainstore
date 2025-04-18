@@ -2,62 +2,91 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
   color: #333;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #ff6600;
 }
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
 }
-header.hero {
-  background-color: #1a1a1a;
+.navbar {
+  background: #111;
+  padding: 20px 0;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.nav-links a {
+  color: white;
+  font-weight: 500;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-landing') no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 100px 20px;
 }
-.subtitle {
-  font-size: 1.25em;
-  margin-top: 10px;
-}
 .cta-button {
   display: inline-block;
-  margin-top: 30px;
-  padding: 12px 28px;
-  background-color: #ffa500;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #ff6600;
   color: white;
-  text-decoration: none;
+  border-radius: 4px;
   font-weight: bold;
-  border-radius: 5px;
 }
-.features, .highlight, .contact {
+
+.features {
+  display: flex;
+  gap: 30px;
+  margin: 80px 0;
+  justify-content: space-between;
+}
+.feature-block {
+  flex: 1;
+  text-align: center;
+}
+.feature-block img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.banner {
+  background-color: #fafafa;
+  text-align: center;
   padding: 80px 20px;
 }
-.features h2, .highlight h2, .contact h2 {
-  text-align: center;
-  color: #ffa500;
-}
-.feature-item {
-  margin-top: 40px;
-}
-.highlight {
-  background-color: #f7f7f7;
-}
 footer {
-  background-color: #f0f0f0;
+  background: #eee;
   text-align: center;
   padding: 20px;
-  margin-top: 60px;
+  font-size: 0.9em;
 }
-a {
-  color: #ffa500;
-  text-decoration: none;
-}
-@media screen and (max-width: 600px) {
-  header.hero {
-    padding: 60px 15px;
+@media screen and (max-width: 768px) {
+  .features {
+    flex-direction: column;
   }
-  .cta-button {
-    padding: 10px 20px;
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
   }
 }
