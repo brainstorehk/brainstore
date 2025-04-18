@@ -10,7 +10,10 @@
   <nav class="navbar">
     <div class="container nav-container">
       <a href="index.html" class="logo">Brainstore</a>
-      <ul class="nav-links">
+      <ul class="<li class="lang-switcher">
+  <a href="#" onclick="switchLang()">中文</a>
+</li>
+">
         <li><a href="about.html">About Us</a></li>
         <li><a href="film.html">Film & TV</a></li>
         <li><a href="marketing.html">Marketing</a></li>
@@ -61,5 +64,18 @@
       <p>© 2025 Brainstore Limited. All rights reserved.</p>
     </div>
   </footer>
+  <script>
+  function switchLang() {
+    const currentPage = location.pathname;
+    if (currentPage.includes('-zh')) {
+      const englishPage = currentPage.replace('-zh', '');
+      window.location.href = englishPage;
+    } else {
+      const zhPage = currentPage.replace('.html', '-zh.html');
+      window.location.href = zhPage;
+    }
+  }
+</script>
+
 </body>
 </html>
