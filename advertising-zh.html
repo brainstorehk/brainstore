@@ -24,32 +24,43 @@
   <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1581090700227-4c4ed45e4a29?fit=crop&w=1400&q=80');">
     <div class="hero-content container">
       <h1>廣告策略</h1>
-      <p>從品牌傳播到數位成效，我們打造具故事性與轉化力的廣告內容。</p>
+      <p>我們整合故事策略與內容效能，打造可擴展、具轉化力的廣告系統。</p>
     </div>
   </header>
 
+  <section class="container">
+    <h2>服務範疇</h2>
+    <ul>
+      <li>🎯 以影片為核心的廣告活動</li>
+      <li>📊 成效與投放策略</li>
+      <li>📈 成長導向的行銷規劃</li>
+      <li>📹 廣告素材與內容製作</li>
+    </ul>
+  </section>
+
   <section class="container team-gallery">
-    <h2>精彩案例</h2>
+    <h2>案例精選</h2>
     <div class="team-grid">
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1611078489935-0cb964feef61?fit=crop&w=300&q=80" alt="案例一" />
-        <p>品牌短片 – 健康 App</p>
+        <img src="https://images.unsplash.com/photo-1611078489935-0cb964feef61?fit=crop&w=300&q=80" alt="Wellness" />
+        <p><strong>健康平台</strong><br>專為付費投放設計的優化影片內容。</p>
       </div>
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?fit=crop&w=300&q=80" alt="案例二" />
-        <p>數位行銷 – 時裝零售</p>
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?fit=crop&w=300&q=80" alt="Fashion" />
+        <p><strong>時尚零售</strong><br>整合式廣告創意設計，搭配模組化社群素材。</p>
       </div>
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62?fit=crop&w=300&q=80" alt="案例三" />
-        <p>社群影片 – 音樂平台</p>
+        <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62?fit=crop&w=300&q=80" alt="Music" />
+        <p><strong>音樂平台</strong><br>動態圖像與互動設計的短影音廣告。</p>
       </div>
     </div>
   </section>
 
-  <section class="container">
-    <h2>我們的策略</h2>
-    <p>我們與客戶共同釐清核心訊息，透過情感化與結果導向的廣告策略，實現品牌與受眾之間的連結。</p>
-    <p>從腳本、拍攝到內容分發，每一步都圍繞「創意 + 效果」的理念所打造。</p>
+  <section class="highlight-block">
+    <div class="container">
+      <h2>創意即轉化</h2>
+      <p>我們讓品牌情感與成效轉化同時發生，從故事策略到投放設計，打造能打動人心也能提升數據的內容體驗。</p>
+    </div>
   </section>
 
   <footer>
@@ -63,11 +74,9 @@
       const currentPage = window.location.pathname;
       const fileName = currentPage.substring(currentPage.lastIndexOf('/') + 1);
       if (fileName.includes('-zh.html')) {
-        const newFile = fileName.replace('-zh.html', '.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('-zh.html', '.html');
       } else {
-        const newFile = fileName.replace('.html', '-zh.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('.html', '-zh.html');
       }
     }
   </script>
