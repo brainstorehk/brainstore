@@ -229,5 +229,14 @@ footer {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+}.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+.two-column > div {
+  flex: 1;
+  min-width: 250px;
 }
 
