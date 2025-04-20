@@ -1,2 +1,74 @@
-<h1>創意與連結</h1>
-<p>我們幫助創作者和品牌將想法變成現實。</p>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brainstore 創意策動平台</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index-zh.html" class="logo">Brainstore</a>
+      <ul class="nav-links">
+        <li><a href="about-zh.html">關於我們</a></li>
+        <li><a href="film-zh.html">影視製作</a></li>
+        <li><a href="marketing-zh.html">市場推廣</a></li>
+        <li><a href="networking-zh.html">網絡連結</a></li>
+        <li><a href="advertising-zh.html">廣告策略</a></li>
+        <li><a href="#" onclick="switchLang()">EN</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1581093588401-71f6105c8b8b?fit=crop&w=1400&q=80');">
+    <div class="hero-content container">
+      <h1>將想法轉化為影響力</h1>
+      <p>Brainstore 專為創作者、新創團隊及品牌提供故事設計、策略顧問與創新服務。</p>
+      <a href="about-zh.html" class="cta-button">了解更多</a>
+    </div>
+  </header>
+
+  <section class="three-columns container">
+    <div class="column">
+      <img src="https://images.unsplash.com/photo-1590608897129-79da97da5b3b?fit=crop&w=600&q=80" alt="內容創作" />
+      <h3>內容創作</h3>
+      <p>我們提供高影響力的視覺內容與故事編排，助品牌吸引目光。</p>
+    </div>
+    <div class="column">
+      <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde16?fit=crop&w=600&q=80" alt="初創支援" />
+      <h3>初創支援</h3>
+      <p>從驗證創意、建立提案至商業策略，我們陪伴早期團隊茁壯。</p>
+    </div>
+    <div class="column">
+      <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?fit=crop&w=600&q=80" alt="品牌策略" />
+      <h3>品牌策略</h3>
+      <p>結合目標與價值，我們設計可持續且有影響力的品牌定位。</p>
+    </div>
+  </section>
+
+  <section class="highlight-block">
+    <div class="container">
+      <h2>與創新者同行，實踐未來故事</h2>
+      <p>從創作者到企業家，我們協助夥伴將理念轉化為可見成果。</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Brainstore Limited. 版權所有。</p>
+    </div>
+  </footer>
+
+  <script>
+    function switchLang() {
+      const currentPage = location.pathname;
+      if (currentPage.includes('-zh')) {
+        window.location.href = currentPage.replace('-zh', '');
+      } else {
+        window.location.href = currentPage.replace('.html', '-zh.html');
+      }
+    }
+  </script>
+</body>
+</html>
