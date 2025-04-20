@@ -23,15 +23,25 @@
 
   <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1611078489935-0cb964feef61?fit=crop&w=1400&q=80');">
     <div class="hero-content container">
-      <h1>Film & Television</h1>
-      <p>Original productions, branded content, and cinematic storytelling — crafted with purpose.</p>
+      <h1>Film & Television Production</h1>
+      <p>Brainstore provides complete creative and production services for film and television, including drama series, variety shows, short films, and docu-style content.</p>
     </div>
   </header>
 
   <section class="container">
-    <h2>Our Showreel</h2>
+    <h2>Our Services</h2>
+    <ul>
+      <li>🎬 Drama & Variety Development</li>
+      <li>📝 Screenwriting</li>
+      <li>🎥 Direction & Production</li>
+      <li>✂️ Post-production & Editing</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>Showreel</h2>
     <div class="video-wrapper">
-      <iframe width="100%" height="450" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Brainstore Showreel" frameborder="0" allowfullscreen></iframe>
+      <iframe width="100%" height="450" src="https://www.youtube.com/embed/YOUR_SHOWREEL_ID" title="Brainstore Showreel" frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
 
@@ -39,16 +49,16 @@
     <h2>Featured Projects</h2>
     <div class="team-grid">
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1573164574511-73c7736c7b9b?fit=crop&w=300&q=80" alt="Project 1" />
-        <p>Short Film – “Edges”</p>
+        <img src="https://images.unsplash.com/photo-1618366712010-fc6cba6b8c3b?fit=crop&w=300&q=80" alt="Flicker" />
+        <p><strong>Flicker</strong><br>An experimental short film exploring memory and light, featured in several Asia-based indie platforms.</p>
       </div>
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1581905764498-4f5c14a8a1b4?fit=crop&w=300&q=80" alt="Project 2" />
-        <p>Mini Series – Startup Life</p>
+        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?fit=crop&w=300&q=80" alt="Bloom" />
+        <p><strong>Bloom</strong><br>A skincare campaign told in three cinematic acts, combining fashion, narrative, and poetry.</p>
       </div>
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1593005510509-0a4a9c943d59?fit=crop&w=300&q=80" alt="Project 3" />
-        <p>Brand Story – Bloom Skincare</p>
+        <img src="https://images.unsplash.com/photo-1586283898301-3f89f4f0f222?fit=crop&w=300&q=80" alt="Startup Voices" />
+        <p><strong>Startup Voices</strong><br>A docu-style series spotlighting early-stage founders and entrepreneurs in Hong Kong.</p>
       </div>
     </div>
   </section>
@@ -64,11 +74,9 @@
       const currentPage = window.location.pathname;
       const fileName = currentPage.substring(currentPage.lastIndexOf('/') + 1);
       if (fileName.includes('-zh.html')) {
-        const newFile = fileName.replace('-zh.html', '.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('-zh.html', '.html');
       } else {
-        const newFile = fileName.replace('.html', '-zh.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('.html', '-zh.html');
       }
     }
   </script>
