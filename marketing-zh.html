@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>市場推廣 – Brainstore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index-zh.html" class="logo">Brainstore</a>
+      <ul class="nav-links">
+        <li><a href="about-zh.html">關於我們</a></li>
+        <li><a href="film-zh.html">影視製作</a></li>
+        <li><a href="marketing-zh.html">市場推廣</a></li>
+        <li><a href="networking-zh.html">網絡連結</a></li>
+        <li><a href="advertising-zh.html">廣告策略</a></li>
+        <li><a href="#" onclick="switchLang()">EN</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=1400&q=80');">
+    <div class="hero-content container">
+      <h1>市場推廣與品牌策略</h1>
+      <p>從創意到數據驅動，我們的行銷團隊協助品牌觸及目標群眾、打造持久關係。</p>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2>推廣影片</h2>
+    <div class="video-wrapper">
+      <iframe width="100%" height="450" src="https://www.youtube.com/embed/YOUR_MARKETING_VIDEO_ID" title="Marketing Showreel" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="container team-gallery">
+    <h2>行銷案例</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?fit=crop&w=300&q=80" alt="案例一" />
+        <p>生活品牌 – 意見領袖系列</p>
+      </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1586281380349-632531db7f32?fit=crop&w=300&q=80" alt="案例二" />
+        <p>App 新品上市 – 數位行銷</p>
+      </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?fit=crop&w=300&q=80" alt="案例三" />
+        <p>社群影片企劃 – 美妝品牌</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>我們的方式</h2>
+    <div class="two-column">
+      <div>
+        <h3>策略為先</h3>
+        <p>深入了解品牌與受眾，制定清晰且可執行的溝通主軸，讓內容更有影響力。</p>
+      </div>
+      <div>
+        <h3>創意執行</h3>
+        <p>從內容設計到跨平台分發，結合創意與洞察，實現效果導向的行銷內容。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Brainstore Limited. 版權所有。</p>
+    </div>
+  </footer>
+
+  <script>
+    function switchLang() {
+      const currentPage = location.pathname;
+      if (currentPage.includes('-zh')) {
+        window.location.href = currentPage.replace('-zh', '');
+      } else {
+        window.location.href = currentPage.replace('.html', '-zh.html');
+      }
+    }
+  </script>
+</body>
+</html>
