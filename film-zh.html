@@ -61,11 +61,14 @@
 
   <script>
     function switchLang() {
-      const currentPage = location.pathname;
-      if (currentPage.includes('-zh')) {
-        window.location.href = currentPage.replace('-zh', '');
+      const currentPage = window.location.pathname;
+      const fileName = currentPage.substring(currentPage.lastIndexOf('/') + 1);
+      if (fileName.includes('-zh.html')) {
+        const newFile = fileName.replace('-zh.html', '.html');
+        window.location.href = currentPage.replace(fileName, newFile);
       } else {
-        window.location.href = currentPage.replace('.html', '-zh.html');
+        const newFile = fileName.replace('.html', '-zh.html');
+        window.location.href = currentPage.replace(fileName, newFile);
       }
     }
   </script>
