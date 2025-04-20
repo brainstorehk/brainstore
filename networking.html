@@ -16,6 +16,7 @@
         <li><a href="marketing.html">Marketing</a></li>
         <li><a href="networking.html">Networking</a></li>
         <li><a href="advertising.html">Advertising</a></li>
+        <li><a href="#" onclick="switchLang()">中文</a></li>
       </ul>
     </div>
   </nav>
@@ -55,5 +56,19 @@
       <p>© 2025 Brainstore Limited. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function switchLang() {
+      const currentPage = window.location.pathname;
+      const fileName = currentPage.substring(currentPage.lastIndexOf('/') + 1);
+      if (fileName.includes('-zh.html')) {
+        const newFile = fileName.replace('-zh.html', '.html');
+        window.location.href = currentPage.replace(fileName, newFile);
+      } else {
+        const newFile = fileName.replace('.html', '-zh.html');
+        window.location.href = currentPage.replace(fileName, newFile);
+      }
+    }
+  </script>
 </body>
 </html>
