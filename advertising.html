@@ -24,32 +24,43 @@
   <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1581090700227-4c4ed45e4a29?fit=crop&w=1400&q=80');">
     <div class="hero-content container">
       <h1>Advertising</h1>
-      <p>From brand awareness to digital performance, our advertising blends story and strategy to spark action.</p>
+      <p>We combine story, strategy, and content performance to build bold and scalable advertising systems.</p>
     </div>
   </header>
 
+  <section class="container">
+    <h2>Capabilities</h2>
+    <ul>
+      <li>🎯 Video-first Campaigns</li>
+      <li>📊 Performance & Paid Media Strategy</li>
+      <li>📈 Growth Campaign Design</li>
+      <li>📹 Content & Asset Production</li>
+    </ul>
+  </section>
+
   <section class="container team-gallery">
-    <h2>Campaign Highlights</h2>
+    <h2>Case Highlights</h2>
     <div class="team-grid">
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1611078489935-0cb964feef61?fit=crop&w=300&q=80" alt="Campaign 1" />
-        <p>Brand Film – Wellness App</p>
+        <img src="https://images.unsplash.com/photo-1611078489935-0cb964feef61?fit=crop&w=300&q=80" alt="Wellness Ad" />
+        <p><strong>Wellness Platform</strong><br>Performance-optimized video series for paid media deployment.</p>
       </div>
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?fit=crop&w=300&q=80" alt="Campaign 2" />
-        <p>Digital Launch – Fashion Retail</p>
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?fit=crop&w=300&q=80" alt="Fashion Ad" />
+        <p><strong>Fashion Retail</strong><br>Full funnel campaign creative with modular social content.</p>
       </div>
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62?fit=crop&w=300&q=80" alt="Campaign 3" />
-        <p>Social Video – Music Platform</p>
+        <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62?fit=crop&w=300&q=80" alt="Music Ads" />
+        <p><strong>Music Platform</strong><br>Short-form social ads with motion graphics and interactive design.</p>
       </div>
     </div>
   </section>
 
-  <section class="container">
-    <h2>Our Approach</h2>
-    <p>We collaborate with clients to define the message, then craft campaigns around clarity, emotion, and measurable impact.</p>
-    <p>We specialize in video-first advertising, performance media strategy, and platform-native storytelling.</p>
+  <section class="highlight-block">
+    <div class="container">
+      <h2>Creative That Performs</h2>
+      <p>Our work connects brand emotion with measurable results. From content design to strategy execution, we deliver advertising that moves people — and metrics.</p>
+    </div>
   </section>
 
   <footer>
@@ -63,11 +74,9 @@
       const currentPage = window.location.pathname;
       const fileName = currentPage.substring(currentPage.lastIndexOf('/') + 1);
       if (fileName.includes('-zh.html')) {
-        const newFile = fileName.replace('-zh.html', '.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('-zh.html', '.html');
       } else {
-        const newFile = fileName.replace('.html', '-zh.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('.html', '-zh.html');
       }
     }
   </script>
