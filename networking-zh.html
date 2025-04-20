@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>網絡連結 – Brainstore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index-zh.html" class="logo">Brainstore</a>
+      <ul class="nav-links">
+        <li><a href="about-zh.html">關於我們</a></li>
+        <li><a href="film-zh.html">影視製作</a></li>
+        <li><a href="marketing-zh.html">市場推廣</a></li>
+        <li><a href="networking-zh.html">網絡連結</a></li>
+        <li><a href="advertising-zh.html">廣告策略</a></li>
+        <li><a href="#" onclick="switchLang()">EN</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1556761175-129418cb2dfe?fit=crop&w=1400&q=80');">
+    <div class="hero-content container">
+      <h1>網絡連結與合作</h1>
+      <p>我們串連創意人、初創企業與合作夥伴，建立共創平台，實現彼此願景。</p>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2>我們連結誰？</h2>
+    <p>無論您是內容創作者、投資人、導演、還是品牌主，Brainstore 打造一個支持創意與成長的生態圈。真正的價值，在於連結對的人。</p>
+  </section>
+
+  <section class="container team-gallery">
+    <h2>過往合作夥伴</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?fit=crop&w=300&q=80" alt="夥伴一" />
+        <p>創意工作室</p>
+      </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?fit=crop&w=300&q=80" alt="夥伴二" />
+        <p>新創加速器</p>
+      </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1573497491207-75ac7d60b9d3?fit=crop&w=300&q=80" alt="夥伴三" />
+        <p>媒體平台</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Brainstore Limited. 版權所有。</p>
+    </div>
+  </footer>
+
+  <script>
+    function switchLang() {
+      const currentPage = location.pathname;
+      if (currentPage.includes('-zh')) {
+        window.location.href = currentPage.replace('-zh', '');
+      } else {
+        window.location.href = currentPage.replace('.html', '-zh.html');
+      }
+    }
+  </script>
+</body>
+</html>
