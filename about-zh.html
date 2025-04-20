@@ -23,19 +23,19 @@
 
   <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?fit=crop&w=1400&q=80');">
     <div class="hero-content container">
-      <h1>關於我們</h1>
-      <p>Brainstore 是一個為創新者與品牌打造未來故事的平台。</p>
+      <h1>關於 Brainstore</h1>
+      <p>總部位於香港的創意合作引擎，致力於打造能夠推動品牌與創作者成長的故事與系統。</p>
     </div>
   </header>
 
   <section class="container founder-section">
-    <h2>創辦人簡介</h2>
+    <h2>創辦人</h2>
     <div class="founder-profile">
       <img src="https://images.unsplash.com/photo-1603415526960-f7e0328ed917?fit=crop&w=400&q=80" alt="創辦人 Alex Cheng" />
       <div>
         <h3>Alex Cheng</h3>
         <p><strong>創辦人 & 創意總監</strong></p>
-        <p>擁有超過十五年於影視與創新領域的經驗，Alex 致力於協助創作者與創業家透過策略與敘事方式實現願景。</p>
+        <p>Alex 是一位橫跨內容、科技與創業的策略人與創作者，致力於將理念轉化為運動，將品牌打造成平台。他相信當敘事搭配基礎建設，將能擴展影響力並打造文化。</p>
       </div>
     </div>
   </section>
@@ -45,15 +45,15 @@
     <div class="team-grid">
       <div class="team-member">
         <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?fit=crop&w=300&q=80" alt="團隊成員 1" />
-        <p>創意製作人</p>
+        <p>製片與編劇</p>
       </div>
       <div class="team-member">
         <img src="https://images.unsplash.com/photo-1603415526960-1c56fe4d2b58?fit=crop&w=300&q=80" alt="團隊成員 2" />
-        <p>品牌策略顧問</p>
+        <p>行銷與研究</p>
       </div>
       <div class="team-member">
         <img src="https://images.unsplash.com/photo-1603415526980-cf304d77d232?fit=crop&w=300&q=80" alt="團隊成員 3" />
-        <p>影片剪輯師</p>
+        <p>設計與創意營運</p>
       </div>
     </div>
   </section>
@@ -69,11 +69,9 @@
       const currentPage = window.location.pathname;
       const fileName = currentPage.substring(currentPage.lastIndexOf('/') + 1);
       if (fileName.includes('-zh.html')) {
-        const newFile = fileName.replace('-zh.html', '.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('-zh.html', '.html');
       } else {
-        const newFile = fileName.replace('.html', '-zh.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('.html', '-zh.html');
       }
     }
   </script>
