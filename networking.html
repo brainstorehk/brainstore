@@ -23,30 +23,30 @@
 
   <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1556761175-129418cb2dfe?fit=crop&w=1400&q=80');">
     <div class="hero-content container">
-      <h1>Networking & Collaboration</h1>
-      <p>We connect creators, startups, and industry partners to collaborate, grow, and build stronger ecosystems.</p>
+      <h1>Networking</h1>
+      <p>Brainstore collaborates with creators, startups, and organizations through strategic partnerships, project development, and community-building initiatives.</p>
     </div>
   </header>
 
   <section class="container">
-    <h2>Who We Connect</h2>
-    <p>Whether you’re a founder, producer, investor, or creative partner — Brainstore is designed to foster meaningful connection. We believe every project is stronger with the right network behind it.</p>
+    <h2>Connection as a Resource</h2>
+    <p>We believe that collaboration accelerates growth. We connect creative people, early-stage teams, and brands with shared values — unlocking new ideas and ecosystems.</p>
   </section>
 
   <section class="container team-gallery">
-    <h2>Collaborators & Community</h2>
+    <h2>Community & Partners</h2>
     <div class="team-grid">
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?fit=crop&w=300&q=80" alt="Partner 1" />
-        <p>Creative Studio</p>
+        <img src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?fit=crop&w=300&q=80" alt="Studio Collab" />
+        <p>Studio Collaborations</p>
       </div>
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?fit=crop&w=300&q=80" alt="Partner 2" />
-        <p>Startup Incubator</p>
+        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?fit=crop&w=300&q=80" alt="Startup Partners" />
+        <p>Startup Partners</p>
       </div>
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1573497491207-75ac7d60b9d3?fit=crop&w=300&q=80" alt="Partner 3" />
-        <p>Media Partner</p>
+        <img src="https://images.unsplash.com/photo-1573497491207-75ac7d60b9d3?fit=crop&w=300&q=80" alt="Media Friends" />
+        <p>Media & Cultural Networks</p>
       </div>
     </div>
   </section>
@@ -62,11 +62,9 @@
       const currentPage = window.location.pathname;
       const fileName = currentPage.substring(currentPage.lastIndexOf('/') + 1);
       if (fileName.includes('-zh.html')) {
-        const newFile = fileName.replace('-zh.html', '.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('-zh.html', '.html');
       } else {
-        const newFile = fileName.replace('.html', '-zh.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('.html', '-zh.html');
       }
     }
   </script>
