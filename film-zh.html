@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>影視製作 – Brainstore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index-zh.html" class="logo">Brainstore</a>
+      <ul class="nav-links">
+        <li><a href="about-zh.html">關於我們</a></li>
+        <li><a href="film-zh.html">影視製作</a></li>
+        <li><a href="marketing-zh.html">市場推廣</a></li>
+        <li><a href="networking-zh.html">網絡連結</a></li>
+        <li><a href="advertising-zh.html">廣告策略</a></li>
+        <li><a href="#" onclick="switchLang()">EN</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1611078489935-0cb964feef61?fit=crop&w=1400&q=80');">
+    <div class="hero-content container">
+      <h1>影視製作</h1>
+      <p>從原創短片到品牌敘事，我們創作具情感與深度的影像作品。</p>
+    </div>
+  </header>
+
+  <section class="container">
+    <h2>作品總覽</h2>
+    <div class="video-wrapper">
+      <iframe width="100%" height="450" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Showreel" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="container team-gallery">
+    <h2>精選作品</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1573164574511-73c7736c7b9b?fit=crop&w=300&q=80" alt="作品一" />
+        <p>短片《Edges》</p>
+      </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1581905764498-4f5c14a8a1b4?fit=crop&w=300&q=80" alt="作品二" />
+        <p>迷你影集 Startup Life</p>
+      </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1593005510509-0a4a9c943d59?fit=crop&w=300&q=80" alt="作品三" />
+        <p>品牌故事 – Bloom Skincare</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Brainstore Limited. 版權所有。</p>
+    </div>
+  </footer>
+
+  <script>
+    function switchLang() {
+      const currentPage = location.pathname;
+      if (currentPage.includes('-zh')) {
+        window.location.href = currentPage.replace('-zh', '');
+      } else {
+        window.location.href = currentPage.replace('.html', '-zh.html');
+      }
+    }
+  </script>
+</body>
+</html>
