@@ -23,47 +23,43 @@
 
   <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=1400&q=80');">
     <div class="hero-content container">
-      <h1>Marketing & Campaigns</h1>
-      <p>We drive brand growth through visual campaigns, performance strategies, and platform-native content.</p>
+      <h1>Marketing</h1>
+      <p>We help people grow ideas, audiences, and brands through campaigns, strategy, and content ecosystems.</p>
     </div>
   </header>
 
   <section class="container">
-    <h2>Marketing Showreel</h2>
-    <div class="video-wrapper">
-      <iframe width="100%" height="450" src="https://www.youtube.com/embed/YOUR_MARKETING_VIDEO_ID" title="Marketing Showreel" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <section class="container team-gallery">
-    <h2>Case Studies</h2>
-    <div class="team-grid">
-      <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?fit=crop&w=300&q=80" alt="Campaign 1" />
-        <p>Influencer Series – Lifestyle Brand</p>
-      </div>
-      <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1586281380349-632531db7f32?fit=crop&w=300&q=80" alt="Campaign 2" />
-        <p>Digital Launch – App Startup</p>
-      </div>
-      <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?fit=crop&w=300&q=80" alt="Campaign 3" />
-        <p>Social Series – Skincare Retail</p>
-      </div>
-    </div>
+    <h2>What We Do</h2>
+    <ul>
+      <li>📢 Creative Campaigns – launch ideas through stories and visuals</li>
+      <li>🔍 Research & Positioning – clarity in brand messaging</li>
+      <li>📱 Community Marketing – creator-based & social-first</li>
+      <li>📈 Performance Strategy – insights, optimization, and outcomes</li>
+    </ul>
   </section>
 
   <section class="container">
-    <h2>How We Work</h2>
-    <div class="two-column">
-      <div>
-        <h3>Strategy First</h3>
-        <p>We start with research, clarity, and messaging — then build the creative around what resonates with your audience.</p>
+    <h2>Recent Work</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?fit=crop&w=300&q=80" alt="Playground" />
+        <p><strong>Playground</strong><br>A platform launch campaign using emotion-driven video and modular content assets.</p>
       </div>
-      <div>
-        <h3>Creative Execution</h3>
-        <p>Our production and design teams turn big ideas into performance content — designed for all digital touchpoints.</p>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1573497019419-1b8b58a75cfe?fit=crop&w=300&q=80" alt="Botan" />
+        <p><strong>Botan</strong><br>Skincare influencer program and visual storytelling series.</p>
       </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1593005510409-cbbc11e3bb99?fit=crop&w=300&q=80" alt="Creative Voice" />
+        <p><strong>Creative Voice</strong><br>Interview content + motion assets for a platform empowering creative talent.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="highlight-block">
+    <div class="container">
+      <h2>Growth as a System</h2>
+      <p>We view marketing as a system — combining brand storytelling, social connection, and performance outcomes to build long-term value.</p>
     </div>
   </section>
 
@@ -78,11 +74,9 @@
       const currentPage = window.location.pathname;
       const fileName = currentPage.substring(currentPage.lastIndexOf('/') + 1);
       if (fileName.includes('-zh.html')) {
-        const newFile = fileName.replace('-zh.html', '.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('-zh.html', '.html');
       } else {
-        const newFile = fileName.replace('.html', '-zh.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('.html', '-zh.html');
       }
     }
   </script>
