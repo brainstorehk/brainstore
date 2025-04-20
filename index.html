@@ -23,34 +23,34 @@
 
   <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1581093588401-71f6105c8b8b?fit=crop&w=1400&q=80');">
     <div class="hero-content container">
-      <h1>Turning Ideas Into Impact</h1>
-      <p>Brainstore Limited helps startups, creators, and brands grow through storytelling, strategy, and innovation.</p>
-      <a href="about.html" class="cta-button">Get Started</a>
+      <h1>Brainstore: Creative Collaboration Engine</h1>
+      <p>We’re a creative platform and studio producing bold content, launching campaigns, and empowering creators and startups to grow their vision.</p>
+      <a href="about.html" class="cta-button">Get to Know Us</a>
     </div>
   </header>
 
   <section class="three-columns container">
     <div class="column">
-      <img src="https://images.unsplash.com/photo-1590608897129-79da97da5b3b?fit=crop&w=600&q=80" alt="Content Creation" />
-      <h3>Content Creation</h3>
-      <p>We develop high-impact visuals and storytelling across formats for creators and brands.</p>
+      <img src="https://images.unsplash.com/photo-1611078489935-0cb964feef61?fit=crop&w=600&q=80" alt="Studio" />
+      <h3>Content Studio</h3>
+      <p>Original film and branded content with high visual storytelling impact.</p>
     </div>
     <div class="column">
-      <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde16?fit=crop&w=600&q=80" alt="Startup Support" />
-      <h3>Startup Support</h3>
-      <p>From idea validation to pitch development, we help early-stage teams grow smarter.</p>
+      <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?fit=crop&w=600&q=80" alt="Marketing" />
+      <h3>Marketing Lab</h3>
+      <p>Campaigns and strategy for community-led growth and product launches.</p>
     </div>
     <div class="column">
-      <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?fit=crop&w=600&q=80" alt="Strategy" />
-      <h3>Brand Strategy</h3>
-      <p>We turn goals into growth with sharp, actionable, and sustainable brand positioning.</p>
+      <img src="https://images.unsplash.com/photo-1531379410502-63bfe8cdafc1?fit=crop&w=600&q=80" alt="Startup" />
+      <h3>Startup Engine</h3>
+      <p>Collaborative support and visibility for creators and early-stage businesses.</p>
     </div>
   </section>
 
   <section class="highlight-block">
     <div class="container">
-      <h2>We Collaborate With Founders & Visionaries</h2>
-      <p>Our clients span industries and stages — we help turn bold ideas into lasting brands.</p>
+      <h2>We turn stories into systems</h2>
+      <p>By combining storytelling, branding, and digital design, we help people and projects become ideas that spread — and companies that grow.</p>
     </div>
   </section>
 
@@ -65,11 +65,9 @@
       const currentPage = window.location.pathname;
       const fileName = currentPage.substring(currentPage.lastIndexOf('/') + 1);
       if (fileName.includes('-zh.html')) {
-        const newFile = fileName.replace('-zh.html', '.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('-zh.html', '.html');
       } else {
-        const newFile = fileName.replace('.html', '-zh.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('.html', '-zh.html');
       }
     }
   </script>
