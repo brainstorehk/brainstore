@@ -23,47 +23,43 @@
 
   <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?fit=crop&w=1400&q=80');">
     <div class="hero-content container">
-      <h1>市場推廣與品牌策略</h1>
-      <p>從創意到數據驅動，我們的行銷團隊協助品牌觸及目標群眾、打造持久關係。</p>
+      <h1>市場推廣</h1>
+      <p>我們透過活動策略與內容系統，幫助創意人、品牌與專案發展受眾、實現影響。</p>
     </div>
   </header>
 
   <section class="container">
-    <h2>推廣影片</h2>
-    <div class="video-wrapper">
-      <iframe width="100%" height="450" src="https://www.youtube.com/embed/YOUR_MARKETING_VIDEO_ID" title="Marketing Showreel" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <section class="container team-gallery">
-    <h2>行銷案例</h2>
-    <div class="team-grid">
-      <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?fit=crop&w=300&q=80" alt="案例一" />
-        <p>生活品牌 – 意見領袖系列</p>
-      </div>
-      <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1586281380349-632531db7f32?fit=crop&w=300&q=80" alt="案例二" />
-        <p>App 新品上市 – 數位行銷</p>
-      </div>
-      <div class="team-member">
-        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?fit=crop&w=300&q=80" alt="案例三" />
-        <p>社群影片企劃 – 美妝品牌</p>
-      </div>
-    </div>
+    <h2>服務項目</h2>
+    <ul>
+      <li>📢 創意活動企劃 – 用故事與視覺推動品牌</li>
+      <li>🔍 品牌研究與定位 – 建立清晰有力的溝通主軸</li>
+      <li>📱 社群與創作者行銷 – 以社群為核心的策略執行</li>
+      <li>📈 成效導向策略 – 數據洞察與優化流程</li>
+    </ul>
   </section>
 
   <section class="container">
-    <h2>我們的方式</h2>
-    <div class="two-column">
-      <div>
-        <h3>策略為先</h3>
-        <p>深入了解品牌與受眾，制定清晰且可執行的溝通主軸，讓內容更有影響力。</p>
+    <h2>近期案例</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?fit=crop&w=300&q=80" alt="Playground" />
+        <p><strong>Playground</strong><br>一個以情感驅動的影音啟動活動，設計模組化多平台素材。</p>
       </div>
-      <div>
-        <h3>創意執行</h3>
-        <p>從內容設計到跨平台分發，結合創意與洞察，實現效果導向的行銷內容。</p>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1573497019419-1b8b58a75cfe?fit=crop&w=300&q=80" alt="Botan" />
+        <p><strong>Botan</strong><br>護膚品牌意見領袖合作企劃與影像故事系列。</p>
       </div>
+      <div class="team-member">
+        <img src="https://images.unsplash.com/photo-1593005510409-cbbc11e3bb99?fit=crop&w=300&q=80" alt="Creative Voice" />
+        <p><strong>Creative Voice</strong><br>專為創作者設計的訪談內容與動態視覺包。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="highlight-block">
+    <div class="container">
+      <h2>成長即系統</h2>
+      <p>我們將行銷視為一套結合敘事、社群連結與成效導向的成長架構，打造可擴展與可持續的品牌影響。</p>
     </div>
   </section>
 
@@ -78,11 +74,9 @@
       const currentPage = window.location.pathname;
       const fileName = currentPage.substring(currentPage.lastIndexOf('/') + 1);
       if (fileName.includes('-zh.html')) {
-        const newFile = fileName.replace('-zh.html', '.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('-zh.html', '.html');
       } else {
-        const newFile = fileName.replace('.html', '-zh.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('.html', '-zh.html');
       }
     }
   </script>
