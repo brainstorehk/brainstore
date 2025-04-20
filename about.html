@@ -10,53 +10,49 @@
   <nav class="navbar">
     <div class="container nav-container">
       <a href="index.html" class="logo">Brainstore</a>
-      <ul class="<li class="lang-switcher">
-  <a href="#" onclick="switchLang()">中文</a>
-</li>
-<ul class="nav-links">
-  <li><a href="about.html">About Us</a></li>
-  <li><a href="film.html">Film & TV</a></li>
-  <li><a href="marketing.html">Marketing</a></li>
-  <li><a href="networking.html">Networking</a></li>
-  <li><a href="advertising.html">Advertising</a></li>
-</ul>
-
+      <ul class="nav-links">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="film.html">Film & TV</a></li>
+        <li><a href="marketing.html">Marketing</a></li>
+        <li><a href="networking.html">Networking</a></li>
+        <li><a href="advertising.html">Advertising</a></li>
+      </ul>
     </div>
   </nav>
 
-  <header class="hero">
+  <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?fit=crop&w=1400&q=80');">
     <div class="hero-content container">
       <h1>About Us</h1>
-      <p>Brainstore Limited is a creative and strategic hub for startups, creators, and storytellers. We connect bold ideas with actionable strategy.</p>
+      <p>At Brainstore, we help creators, founders, and innovators tell stories and build businesses.</p>
     </div>
   </header>
 
   <section class="container founder-section">
     <h2>Founder</h2>
     <div class="founder-profile">
-      <img src="https://images.unsplash.com/photo-founder" alt="Founder">
+      <img src="https://images.unsplash.com/photo-1603415526960-f7e0328ed917?fit=crop&w=400&q=80" alt="Founder" />
       <div>
         <h3>Alex Cheng</h3>
-        <p>Founder & Creative Director</p>
-        <p>Alex has over 15 years of experience in film, media, and business innovation. His vision led to the creation of Brainstore — a platform where creators and entrepreneurs bring visions to life.</p>
+        <p><strong>Founder & Creative Director</strong></p>
+        <p>Alex brings over 15 years of experience in film, media, and innovation. His passion is helping creators and startups turn bold visions into real-world impact through storytelling and strategy.</p>
       </div>
     </div>
   </section>
 
   <section class="container team-gallery">
-    <h2>Our Team</h2>
+    <h2>Meet the Team</h2>
     <div class="team-grid">
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-team1" alt="Team member 1" />
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?fit=crop&w=300&q=80" alt="Team 1" />
         <p>Creative Producer</p>
       </div>
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-team2" alt="Team member 2" />
-        <p>Strategist</p>
+        <img src="https://images.unsplash.com/photo-1603415526960-1c56fe4d2b58?fit=crop&w=300&q=80" alt="Team 2" />
+        <p>Marketing Strategist</p>
       </div>
       <div class="team-member">
-        <img src="https://images.unsplash.com/photo-team3" alt="Team member 3" />
-        <p>Editor</p>
+        <img src="https://images.unsplash.com/photo-1603415526980-cf304d77d232?fit=crop&w=300&q=80" alt="Team 3" />
+        <p>Video Editor</p>
       </div>
     </div>
   </section>
@@ -66,18 +62,5 @@
       <p>© 2025 Brainstore Limited. All rights reserved.</p>
     </div>
   </footer>
-  <script>
-  function switchLang() {
-    const currentPage = location.pathname;
-    if (currentPage.includes('-zh')) {
-      const englishPage = currentPage.replace('-zh', '');
-      window.location.href = englishPage;
-    } else {
-      const zhPage = currentPage.replace('.html', '-zh.html');
-      window.location.href = zhPage;
-    }
-  }
-</script>
-
 </body>
 </html>
