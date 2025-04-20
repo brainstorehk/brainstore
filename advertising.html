@@ -16,6 +16,7 @@
         <li><a href="marketing.html">Marketing</a></li>
         <li><a href="networking.html">Networking</a></li>
         <li><a href="advertising.html">Advertising</a></li>
+        <li><a href="#" onclick="switchLang()">中文</a></li>
       </ul>
     </div>
   </nav>
@@ -47,7 +48,7 @@
 
   <section class="container">
     <h2>Our Approach</h2>
-    <p>We collaborate with clients to define the message, then craft campaigns around clarity, emotion, and measurable impact. Every piece of creative is designed to work hard — on screen, in scroll, and in hearts.</p>
+    <p>We collaborate with clients to define the message, then craft campaigns around clarity, emotion, and measurable impact.</p>
     <p>We specialize in video-first advertising, performance media strategy, and platform-native storytelling.</p>
   </section>
 
@@ -56,5 +57,19 @@
       <p>© 2025 Brainstore Limited. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    function switchLang() {
+      const currentPage = window.location.pathname;
+      const fileName = currentPage.substring(currentPage.lastIndexOf('/') + 1);
+      if (fileName.includes('-zh.html')) {
+        const newFile = fileName.replace('-zh.html', '.html');
+        window.location.href = currentPage.replace(fileName, newFile);
+      } else {
+        const newFile = fileName.replace('.html', '-zh.html');
+        window.location.href = currentPage.replace(fileName, newFile);
+      }
+    }
+  </script>
 </body>
 </html>
