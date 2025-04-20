@@ -23,37 +23,37 @@
 
   <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?fit=crop&w=1400&q=80');">
     <div class="hero-content container">
-      <h1>About Us</h1>
-      <p>At Brainstore, we help creators, founders, and innovators tell stories and build businesses.</p>
+      <h1>About Brainstore</h1>
+      <p>A creative collaboration engine based in Hong Kong, building stories and systems that help brands and creators grow.</p>
     </div>
   </header>
 
   <section class="container founder-section">
     <h2>Founder</h2>
     <div class="founder-profile">
-      <img src="https://images.unsplash.com/photo-1603415526960-f7e0328ed917?fit=crop&w=400&q=80" alt="Founder" />
+      <img src="https://images.unsplash.com/photo-1603415526960-f7e0328ed917?fit=crop&w=400&q=80" alt="Founder Alex Cheng" />
       <div>
         <h3>Alex Cheng</h3>
         <p><strong>Founder & Creative Director</strong></p>
-        <p>Alex brings over 15 years of experience in film, media, and innovation. His passion is helping creators and startups turn bold visions into real-world impact through storytelling and strategy.</p>
+        <p>Alex is a multidisciplinary strategist and creative, working across content, tech, and entrepreneurship. His work focuses on turning ideas into movements, and brands into platforms. He leads Brainstore with the belief that storytelling, when paired with infrastructure, scales growth and builds culture.</p>
       </div>
     </div>
   </section>
 
   <section class="container team-gallery">
-    <h2>Meet the Team</h2>
+    <h2>Core Team</h2>
     <div class="team-grid">
       <div class="team-member">
         <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?fit=crop&w=300&q=80" alt="Team 1" />
-        <p>Creative Producer</p>
+        <p>Producers & Writers</p>
       </div>
       <div class="team-member">
         <img src="https://images.unsplash.com/photo-1603415526960-1c56fe4d2b58?fit=crop&w=300&q=80" alt="Team 2" />
-        <p>Marketing Strategist</p>
+        <p>Marketing & Research</p>
       </div>
       <div class="team-member">
         <img src="https://images.unsplash.com/photo-1603415526980-cf304d77d232?fit=crop&w=300&q=80" alt="Team 3" />
-        <p>Video Editor</p>
+        <p>Design & Creative Ops</p>
       </div>
     </div>
   </section>
@@ -69,11 +69,9 @@
       const currentPage = window.location.pathname;
       const fileName = currentPage.substring(currentPage.lastIndexOf('/') + 1);
       if (fileName.includes('-zh.html')) {
-        const newFile = fileName.replace('-zh.html', '.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('-zh.html', '.html');
       } else {
-        const newFile = fileName.replace('.html', '-zh.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('.html', '-zh.html');
       }
     }
   </script>
