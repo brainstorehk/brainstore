@@ -23,34 +23,34 @@
 
   <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1581093588401-71f6105c8b8b?fit=crop&w=1400&q=80');">
     <div class="hero-content container">
-      <h1>將想法轉化為影響力</h1>
-      <p>Brainstore 專為創作者、新創團隊及品牌提供故事設計、策略顧問與創新服務。</p>
-      <a href="about-zh.html" class="cta-button">了解更多</a>
+      <h1>Brainstore：創意合作引擎</h1>
+      <p>我們是一個創意平台與製作工作室，專注於內容創作、行銷推廣與協助創作者與新創實現願景。</p>
+      <a href="about-zh.html" class="cta-button">了解我們</a>
     </div>
   </header>
 
   <section class="three-columns container">
     <div class="column">
-      <img src="https://images.unsplash.com/photo-1590608897129-79da97da5b3b?fit=crop&w=600&q=80" alt="內容創作" />
-      <h3>內容創作</h3>
-      <p>我們提供高影響力的視覺內容與故事編排，助品牌吸引目光。</p>
+      <img src="https://images.unsplash.com/photo-1611078489935-0cb964feef61?fit=crop&w=600&q=80" alt="工作室" />
+      <h3>影像工作室</h3>
+      <p>原創影片與品牌內容製作，具備高敘事與視覺張力。</p>
     </div>
     <div class="column">
-      <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde16?fit=crop&w=600&q=80" alt="初創支援" />
-      <h3>初創支援</h3>
-      <p>從驗證創意、建立提案至商業策略，我們陪伴早期團隊茁壯。</p>
+      <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?fit=crop&w=600&q=80" alt="行銷實驗室" />
+      <h3>行銷實驗室</h3>
+      <p>策略與活動推廣，為社群導向與產品發表注入動能。</p>
     </div>
     <div class="column">
-      <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?fit=crop&w=600&q=80" alt="品牌策略" />
-      <h3>品牌策略</h3>
-      <p>結合目標與價值，我們設計可持續且有影響力的品牌定位。</p>
+      <img src="https://images.unsplash.com/photo-1531379410502-63bfe8cdafc1?fit=crop&w=600&q=80" alt="新創引擎" />
+      <h3>新創引擎</h3>
+      <p>協作與資源曝光，為創作者與初創團隊提供支持。</p>
     </div>
   </section>
 
   <section class="highlight-block">
     <div class="container">
-      <h2>與創新者同行，實踐未來故事</h2>
-      <p>從創作者到企業家，我們協助夥伴將理念轉化為可見成果。</p>
+      <h2>讓故事成為成長系統</h2>
+      <p>透過故事設計、品牌策略與數位設計，我們協助個人與專案轉化為具有影響力的創新品牌。</p>
     </div>
   </section>
 
@@ -65,11 +65,9 @@
       const currentPage = window.location.pathname;
       const fileName = currentPage.substring(currentPage.lastIndexOf('/') + 1);
       if (fileName.includes('-zh.html')) {
-        const newFile = fileName.replace('-zh.html', '.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('-zh.html', '.html');
       } else {
-        const newFile = fileName.replace('.html', '-zh.html');
-        window.location.href = currentPage.replace(fileName, newFile);
+        window.location.href = fileName.replace('.html', '-zh.html');
       }
     }
   </script>
